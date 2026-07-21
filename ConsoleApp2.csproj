@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="number.cs" />
+    <Compile Include="OddEven.cs" />
     <Compile Include="_1D_Array.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
