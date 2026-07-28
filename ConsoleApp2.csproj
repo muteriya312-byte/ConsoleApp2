@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="binary_search.cs" />
     <Compile Include="Find_Array_element.cs" />
     <Compile Include="first_occurrence.cs" />
     <Compile Include="last_occurrence.cs" />
