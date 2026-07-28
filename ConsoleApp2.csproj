@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Find_Array_element.cs" />
     <Compile Include="number.cs" />
     <Compile Include="OddEven.cs" />
     <Compile Include="palindrom.cs" />
