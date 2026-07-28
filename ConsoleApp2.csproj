@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="number.cs" />
     <Compile Include="OddEven.cs" />
+    <Compile Include="palindrom.cs" />
+    <Compile Include="Reverse_string.cs" />
     <Compile Include="second_largest.cs" />
     <Compile Include="second_small_element.cs" />
     <Compile Include="_1D_Array.cs" />
