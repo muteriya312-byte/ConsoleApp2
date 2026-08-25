@@ -12,6 +12,16 @@ namespace ConsoleApp2
         public string Name {  get; set; }
         private int age;
         public string Dept {  get; set; }
+        private double Salary;
+
+        public void setSalary(double salary)
+        {
+            this.Salary= salary;
+        }
+        public double getSalary(double salary)
+        {
+            return this.Salary;
+        }
 
         public int Age //property
         {
@@ -29,6 +39,7 @@ namespace ConsoleApp2
             Console.WriteLine("Name : " + Name);
             Console.WriteLine("Age : " + Age);
             Console.WriteLine("Dept : " + Dept);
+            Console.WriteLine("Salary : " + Salary);
         }
 
     }
@@ -41,14 +52,17 @@ namespace ConsoleApp2
             e1.Name = "Mital";
             e1.Age = 20;
             e1.Dept = "CSE";
+            e1.setSalary(50000);
             e1.Display();
 
             Employee e2 = new Employee();
             e2.Name = "Hiral";
             e2.Age = 20;
             e2.Dept = "CSE";
+            e2.setSalary(40000);
             e2.Display();
 
+            Console.ReadLine();
            
         }
     }
