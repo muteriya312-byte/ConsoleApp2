@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         //data member
         public string Name {  get; set; }
-        private int age;
+        private int age; //data member
         public string Dept {  get; set; }
         private double Salary;
 
