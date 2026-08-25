@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="binary_search.cs" />
+    <Compile Include="copy_array.cs" />
     <Compile Include="Find_Array_element.cs" />
     <Compile Include="first_occurrence.cs" />
+    <Compile Include="insert_element.cs" />
     <Compile Include="last_occurrence.cs" />
     <Compile Include="linear_search.cs" />
+    <Compile Include="merge_array.cs" />
     <Compile Include="number.cs" />
     <Compile Include="OddEven.cs" />
     <Compile Include="palindrom.cs" />
