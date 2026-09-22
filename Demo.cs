@@ -12,7 +12,7 @@ namespace ConsoleApp2
         public string Name {  get; set; }
         private int age; //data member
         public string Dept {  get; set; }
-        private double Salary;
+        protected double Salary;
 
         public void setSalary(double salary)
         {
@@ -39,15 +39,53 @@ namespace ConsoleApp2
                 age = value;
             }
         }
-        public void Display()
+        public  virtual void Display()
         {
             Console.WriteLine("Name : " + Name);
             Console.WriteLine("Age : " + Age);
             Console.WriteLine("Dept : " + Dept);
             Console.WriteLine("Salary : " + Salary);
         }
+        public void check()
+        {
+            Console.WriteLine("Check method from RegularEmployee ");
+        }
 
     }
+    class RegularEmployee : Employee //level 1
+    {
+        //data members : from this class  : 5
+        //data members : from parent class (Employee) : 3
+
+        //Properties : from this class  : 0
+        //Properties : from parent class (Employee) : 1
+
+        //Methods : from this class  : 0
+        //Methods : from parent class (Employee) : 3
+
+        private double Basic ;
+        private double DA;
+        private double HRA;
+        private double PF;
+        private double PT;
+     
+        public override void Display()
+        {
+            base.Display();
+            //-----------------
+            Console.WriteLine("Basic :" + Basic);
+            Console.WriteLine("DA :" + DA);
+            Console.WriteLine("HRA :" + HRA);
+            Console.WriteLine("PF :" + PF);
+            Console.WriteLine("PT : " + PT);
+        }
+        public new void check()
+        {
+            Console.WriteLine("Check method from RegularEmployee ");
+        }
+
+    }
+    
     class Demo
     {
         static void Main(string[] args)
