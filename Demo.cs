@@ -83,6 +83,10 @@ namespace ConsoleApp2
         {
             Console.WriteLine("Check method from RegularEmployee ");
         }
+        public void Test()
+        {
+            Console.WriteLine("Test method from RegularEmployee ");
+        }
 
     }
     
@@ -91,19 +95,38 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             //object
-            Employee e1 = new Employee();
-            e1.Name = "Mital";
-            e1.Age = 20;
-            e1.Dept = "CSE";
-            e1.setSalary(50000);
-            e1.Display();
+            //Employee e1 = new Employee();
+            //e1.Name = "Mital";
+            //e1.Age = 20;
+            //e1.Dept = "CSE";
+            //e1.setSalary(50000);
+            //e1.Display();
 
-            Employee e2 = new Employee();
-            e2.Name = "Hiral";
-            e2.Age = 20;
-            e2.Dept = "CSE";
-            e2.setSalary(40000);
-            e2.Display();
+            //Employee e2 = new Employee();
+            //e2.Name = "Hiral";
+            //e2.Age = 20;
+            //e2.Dept = "CSE";
+            //e2.setSalary(40000);
+            //e2.Display();
+
+            Employee e3 =new Employee();
+            e3.Display(); //employee
+            e3.check(); //employee
+            //e3.Test(); //error
+            Console.WriteLine("-------------------------------");
+
+            RegularEmployee e4 =new RegularEmployee();
+            e4.Display(); //regular employee
+            e4.check(); //regular employee
+            e4.Test();
+            Console.WriteLine("-------------------------------");
+
+
+            Employee e5 = new RegularEmployee();
+            e5.Display(); //regular employee
+            e5.check(); //employee
+           // e5.Test();//error
+            Console.WriteLine("-------------------------------");
 
             Console.ReadLine();
            
