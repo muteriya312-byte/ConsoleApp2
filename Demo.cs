@@ -23,7 +23,12 @@ namespace ConsoleApp2
             return this.Salary;
         }
 
-        public int Age //property
+        //It does not have any return type explicitly
+        //class name same as constuctor name
+        //
+       
+       
+        public int Age //property -- is looklike veriable and works like method
         {
             get //read
             { 
